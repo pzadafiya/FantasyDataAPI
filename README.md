@@ -1,15 +1,15 @@
 # FantasyDataAPI
 
 We have implemented for below sports API
-##NFL(Football – version v3),
-##Soccer ( version v2)
-##NHL(Hockey –version v3)
-##NBA(Basketball – version v3)
-##MLB(Baseball –version v3)
+- NFL(Football – version v3),
+- Soccer ( version v2)
+- NHL(Hockey –version v3)
+- NBA(Basketball – version v3)
+- MLB(Baseball –version v3)
 
  ### How to configure it ###
 
-Add following section to in web.config file,
+Add following section to in web.config file:
 
 <configSections>
     <section name="fantasyData" type="FantasyData.Configuration.FantasyDataSubscriptionRetrieverSection, FantasyData" />
