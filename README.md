@@ -10,7 +10,7 @@ We have implemented for below sports API
  ### How to configure it ###
 
 Add following section to in web.config file:
-
+<!--
 <configSections>
     <section name="fantasyData" type="FantasyData.Configuration.FantasyDataSubscriptionRetrieverSection, FantasyData" />
     <section name="fantasyDataSoccer" type="FantasyData.Configuration.FantasyDataSubscriptionRetrieverSection, FantasyData" />
@@ -18,9 +18,10 @@ Add following section to in web.config file:
     <section name="fantasyDataNHL" type="FantasyData.Configuration.FantasyDataSubscriptionRetrieverSection, FantasyData" />
     <section name="fantasyDataMLB" type="FantasyData.Configuration.FantasyDataSubscriptionRetrieverSection, FantasyData"/>
 </configSections>
+-->
 
 Add following sections in configuration section in web.config file
-
+<!--
 <fantasyData defaultSubscription="RealTime">
   <subscriptions>
     <add name="RealTime" baseUrl="https://api.fantasydata.net/v3/nfl/" primarySubscriptionKey="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" secondarySubscriptionKey=" xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx "
@@ -51,7 +52,7 @@ Add following sections in configuration section in web.config file
     <add name="RealTime" baseUrl="https://api.fantasydata.net/v3/nba/" primarySubscriptionKey="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" secondarySubscriptionKey="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
   </subscriptions>
 </fantasyDataNBA>
-
+-->
 Note that base URL is stetic and add your subscription keys, you can use trial version from companies web site https://fantasydata.com/
 
 Add DLLs as per requirements to implementation of sport game,  DLL for fantasyData and FantasyData.Utils are mendatory and other dll you can choose as per sport you want to implement,
