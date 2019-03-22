@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyData.NFLTests", "NFL
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Soccer", "Soccer", "{FBAB53E5-92CD-4F52-ADC1-268A638946AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableGenerator", "TableGenerator\TableGenerator.csproj", "{07EB2B39-2D1D-4694-B970-C89D0B2CB337}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyData.Soccer.Entities", "Soccer\FantasyData.Soccer.Entities\FantasyData.Soccer.Entities.csproj", "{78459200-79C8-49B8-8142-64992AEB9FDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyData.Soccer", "Soccer\FantasyData.Soccer\FantasyData.Soccer.csproj", "{421C9C40-4A78-4D65-88B6-7EECFCE652F0}"
@@ -75,10 +73,6 @@ Global
 		{A8E7C0D2-E36B-43FF-8075-8636BAC6779B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8E7C0D2-E36B-43FF-8075-8636BAC6779B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8E7C0D2-E36B-43FF-8075-8636BAC6779B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07EB2B39-2D1D-4694-B970-C89D0B2CB337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07EB2B39-2D1D-4694-B970-C89D0B2CB337}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07EB2B39-2D1D-4694-B970-C89D0B2CB337}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07EB2B39-2D1D-4694-B970-C89D0B2CB337}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78459200-79C8-49B8-8142-64992AEB9FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{78459200-79C8-49B8-8142-64992AEB9FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78459200-79C8-49B8-8142-64992AEB9FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
