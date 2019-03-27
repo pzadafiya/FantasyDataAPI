@@ -134,7 +134,7 @@ namespace FantasyData
         {
             var formatPart = string.Format("/{0}", JSON);
 
-            return formatPart + string.Format(path, args) + string.Format("{0}subscription-key={1}", (args.Length == 0 ? '?' : '&'), GetSubscriptionKey());
+            return formatPart + string.Format(path, args) + string.Format("{0}key={1}", (args.Length == 0 ? '?' : '&'), GetSubscriptionKey());
         }
 
 
