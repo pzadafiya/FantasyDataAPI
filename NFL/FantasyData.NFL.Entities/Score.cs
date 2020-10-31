@@ -62,5 +62,6 @@ namespace FantasyData.NFL.Entities
 		public bool? Canceled { get; set; }
 		public bool? Closed { get; set; }
 		public string Status { get; set; }
+		public int ScoreID { get; set; }
 	}
 }
