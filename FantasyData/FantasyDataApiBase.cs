@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using RestSharp;
@@ -142,6 +143,7 @@ namespace FantasyData
         {
             request.RequestFormat = DataFormat.Json;
             request.JsonSerializer = new JsonSerializer();
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
         }
 
         public string GetSubscriptionKey()
