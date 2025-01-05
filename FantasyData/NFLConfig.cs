@@ -60,6 +60,16 @@ namespace FantasyData
                 return section.ScoreApiBaseUrl;
             }
         }
+
+        public static Uri HeadshotApiBaseUrl
+        {
+            get
+            {
+                var config = ConfigurationManager.GetSection(SectionTagName) as FantasyDataSubscriptionRetrieverSection;
+                FantasyDataSubscriptionElement section = config.GetFirstOrDefault();
+                return section.HeadshotApiBaseUrl;
+            }
+        }
         public static Uri ProjectionApiBaseUrl
         {
             get

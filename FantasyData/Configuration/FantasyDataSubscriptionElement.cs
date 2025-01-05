@@ -49,7 +49,13 @@ namespace FantasyData.Configuration
                 return new Uri(ApiBaseUrl + "/scores/");
             }
         }
-
+        public Uri HeadshotApiBaseUrl
+        {
+            get
+            {
+                return new Uri(ApiBaseUrl + "/headshots/");
+            }
+        }
         public Uri PbpApiBaseUrl
         {
             get

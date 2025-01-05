@@ -15,6 +15,26 @@ namespace FantasyDataTests
     [TestClass]
     public class FantasyDataApiBaseTests
     {
+        [TestMethod]
+        public void Headshot_Get()
+        {
+            var client = new FantasyDataClient();
+
+            var response = client.HeadShotService.Get();
+
+            Assert.IsTrue(response.Any());
+        }
+
+        [TestMethod]
+        public void Injury_Week_Get()
+        {
+            var client = new FantasyDataClient();
+
+            var response = client.InjuryService.GetByWeek(2024 + "POST",1);
+
+            Assert.IsTrue(response.Any());
+        }
+
         /// <summary>
         /// Check If Games In Progress integration test
         /// </summary>

@@ -35,6 +35,8 @@ namespace FantasyData.NFL
 
         public IPlayerSeasonProjectionService PlayerSeasonProjectionService { get; private set; }
 
+        public IHeadShotService HeadShotService { get; private set; }
+
         #endregion
 
 
@@ -50,20 +52,21 @@ namespace FantasyData.NFL
         {
             Uri statApiBaseUrl = NFLConfig.StateApiBaseUrl;
             Uri scoreApiBaseUrl = NFLConfig.ScoreApiBaseUrl;
+            Uri headshotApiBaseUrl = NFLConfig.HeadshotApiBaseUrl;
             Uri ProjectionApiBaseUrl = NFLConfig.ProjectionApiBaseUrl;
 
             DailyFantasyService = new DailyFantasyService(statApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
             SeasonService = new SeasonService(scoreApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
-            NewsService = new NewsService(scoreApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+            NewsService = new NewsService(scoreApiBaseUrl.AbsoluteUri, secondarySubscriptionKey, secondarySubscriptionKey);
             PlayerGameStatService = new PlayerGameStatService(statApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
             PlayerSeasonStatService = new PlayerSeasonStatService(statApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
             TeamDefenseService = new TeamDefenseService(statApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
             GameService = new GameService(statApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
-            InjuryService = new InjuryService(statApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+            InjuryService = new InjuryService(statApiBaseUrl.AbsoluteUri, secondarySubscriptionKey, secondarySubscriptionKey);
             StadiumService = new StadiumService(scoreApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
             TeamService = new TeamService(scoreApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
             BoxScoreService = new BoxScoreService(statApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
-            PlayerService = new PlayerService(statApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+            PlayerService = new PlayerService(statApiBaseUrl.AbsoluteUri, secondarySubscriptionKey, secondarySubscriptionKey);
             ScheduleService = new ScheduleService(scoreApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
             TimeFrameService = new TimeFrameService(scoreApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
             TeamSeasonService = new TeamSeasonService(statApiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
@@ -73,6 +76,7 @@ namespace FantasyData.NFL
             DfsSlateService = new DfsSlateService(ProjectionApiBaseUrl.AbsoluteUri, NFLConfig.ProjectionPrimarySubscriptionKey, NFLConfig.ProjectionSecondarySubscriptionKey);
             PlayerGameProjectionsService = new PlayerGameProjectionService(ProjectionApiBaseUrl.AbsoluteUri, NFLConfig.ProjectionPrimarySubscriptionKey, NFLConfig.ProjectionSecondarySubscriptionKey);
             PlayerSeasonProjectionService = new PlayerSeasonProjectionService(ProjectionApiBaseUrl.AbsoluteUri, NFLConfig.ProjectionPrimarySubscriptionKey, NFLConfig.ProjectionSecondarySubscriptionKey);
+            HeadShotService = new HeadShotService(headshotApiBaseUrl.AbsoluteUri, secondarySubscriptionKey, secondarySubscriptionKey);
         }
 
         /// <summary>

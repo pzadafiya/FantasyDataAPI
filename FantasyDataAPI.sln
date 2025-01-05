@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyData", "FantasyData\FantasyData.csproj", "{EEC3D83B-A3EA-4196-9557-80E40FB7BDEC}"
 EndProject
@@ -34,8 +34,17 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NBA", "NBA", "{5A296252-882D-47A6-AEAE-63223AE72040}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyData.NBA", "NBA\FantasyData.NBA\FantasyData.NBA.csproj", "{B2E0369E-EB88-4470-B4D3-EEC65E12EF94}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0AB50C21-38B8-44A9-8FB9-80FAC6F67A5F} = {0AB50C21-38B8-44A9-8FB9-80FAC6F67A5F}
+		{5BF79131-00F6-4F98-975B-8FA84896B710} = {5BF79131-00F6-4F98-975B-8FA84896B710}
+		{EEC3D83B-A3EA-4196-9557-80E40FB7BDEC} = {EEC3D83B-A3EA-4196-9557-80E40FB7BDEC}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyData.NBA.Entities", "NBA\FantasyData.NBA.Entities\FantasyData.NBA.Entities.csproj", "{0AB50C21-38B8-44A9-8FB9-80FAC6F67A5F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5BF79131-00F6-4F98-975B-8FA84896B710} = {5BF79131-00F6-4F98-975B-8FA84896B710}
+		{EEC3D83B-A3EA-4196-9557-80E40FB7BDEC} = {EEC3D83B-A3EA-4196-9557-80E40FB7BDEC}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyData.NBATests", "NBA\FantasyData.NBATests\FantasyData.NBATests.csproj", "{54D63FF8-F58C-4151-B14D-30797C03668C}"
 EndProject

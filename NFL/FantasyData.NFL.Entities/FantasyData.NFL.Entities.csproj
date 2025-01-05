@@ -50,6 +50,7 @@
     <Compile Include="FantasyDefenseSeason.cs" />
     <Compile Include="FantasyPlayer.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="Headshot.cs" />
     <Compile Include="Injury.cs" />
     <Compile Include="KickPuntReturn.cs" />
     <Compile Include="News.cs" />

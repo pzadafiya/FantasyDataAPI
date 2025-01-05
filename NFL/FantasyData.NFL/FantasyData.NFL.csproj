@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IBoxScoreService.cs" />
+    <Compile Include="Contracts\IHeadShotService.cs" />
     <Compile Include="Contracts\IDailyFantasyService.cs" />
     <Compile Include="Contracts\IGameService.cs" />
     <Compile Include="Contracts\IInjuryService.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Services\DfsSlateService.cs" />
     <Compile Include="Services\DailyFantasyService.cs" />
     <Compile Include="Services\GameService.cs" />
+    <Compile Include="Services\HeadShotService.cs" />
     <Compile Include="Services\InjuryService.cs" />
     <Compile Include="Services\NewsService.cs" />
     <Compile Include="Services\PlayerSeasonProjectionService.cs" />
